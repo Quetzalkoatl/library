@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>My library</title>
+	</head>
+	<body>
+		<div class="page">
+			<header>
+				<div class="header-nav">
+					<a class="header-nav-help" href="#">Help Center</a>
+					<a class="header-nav-support" href="#">Our Support</a>
+					<div class="header-nav-user">
+						<img src="./assets/img/avatar/avatar.png" class="header-nav-user-photo"></img>
+						<p class="header-nav-user-name">Sergey Savelev</p>
+					</div>
+				</div>
+			</header>
+			<main class="content">
+					<aside>
+						<div class="add-book">
+							<button class="btn" id="add-book-btn">ADD A BOOK</button>
+						</div>
+						<nav class="nav">
+								<a class="reading" href="#">Now Reading</a>
+								<a class="browse" href="#">Browse</a>
+								<a class="buy-books" href="#">Buy Books</a>
+								<a class="favorite-books" href="#">Favorite Books</a>
+								<a class="wishlist" href="#">Wishlist</a>
+								<a class="history" href="#">History</a>
+						</nav>
+						<div class="hints">
+								<a href="#">Must Read Titles</a>
+								<a href="#">Best Of List</a>
+								<a href="#">Classic Novels</a>
+								<a href="#">Non Fiction</a>
+						</div>
+						<div class="added">
+							<div class="added-section">
+								<div class="section-part">
+									<div class="added-icon"></div>
+									<p class="added-text">You added <span>The Order of Time</span> by <span>Carlo Rovelli</span> to your <span>Must Read Titles</span> </p>
+								</div>
+								<p class="added-time">24 minutes ago</p>
+							</div>
+							<div class="added-section">
+								<div class="section-part">
+									<div class="added-icon"></div>
+									<p class="added-text">You added <span>Silent Spring </span> by <span>Rachel Carson</span> to your <span>Must Read Titles</span> </p>
+								</div>
+								<p class="added-time">48 minutes ago</p>
+							</div>
+						</div>
+					</aside>
+					<section class="books">
+						<div class="books-header">
+								<p class="books-header-title">Browse Available Books</p>
+								<div class="books-nav">
+									<div class="books-nav-links">
+										<button class="books-nav-link" id="all-books">All Books</button>
+										<button class="books-nav-link">Most Recent</button>
+										<button class="books-nav-link" id="most-popular">Most popular</button>
+										<button class="books-nav-link">Free Books</button>
+									</div>
+									<form class="books-search-bar">
+										<input type="text" class="search-bar-input" id="search-bar-input" placeholder="Enter Keywords"></input>
+										<button class="search-bar-button" id="search-bar-button"></button>
+									</form>
+								</div>
+						</div>
+						<div class="books-list">
+							<div id="book-cell"></div>
+						</div>
+					</section>
+					<section class="popup" id="popup">
+						<div class="popup-inner">
+							<form class="popup-form" action="">
+								<fieldset>
+									<legend>Add a book</legend>
+									<p>
+										<label for="get-title">Title:</label>
+										<input id="get-title" class="get-book-input" type="text" name="name">
+									</p>
+									<p>
+										<label for="get-author">Author:</label>
+										<input id="get-author" class="get-book-input" type="text" name="name">
+									</p>
+									<p>
+										<label for="get-file">File:</label>
+										<input id="get-file" class="get-book-input" type="file" name="name">
+									</p>
+									<input class="save-book-input" id="save-book-input" type="submit" value="Save">
+								</fieldset>
+							</form>
+						</div>
+					</section>
+			</main>
+			<footer>
+				<div class="footer-nav">
+					<div class="question">
+						<div class="question-icon"></div>
+					</div>
+          <div class="cogwheel">
+						<div class="cogwheel-icon"></div>
+        	</div>
+				</div>
+      </footer>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
